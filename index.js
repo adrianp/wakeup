@@ -4,7 +4,7 @@ var express = require('express');
 var path = require('path');
 
 var quote = function quote() {
-	return 'Lorem ipsum dolor';
+	return new Date();
 };
 
 var app = express();
