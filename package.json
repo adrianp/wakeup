@@ -1,7 +1,7 @@
 {
   "name": "wakeup",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple wake-me-up application",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/adrianp/wakeup/issues"
   },
-  "homepage": "https://github.com/adrianp/wakeup"
+  "homepage": "https://github.com/adrianp/wakeup",
+  "dependencies": {
+    "ejs": "^2.3.3",
+    "express": "^4.13.1"
+  }
 }
