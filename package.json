@@ -1,0 +1,19 @@
+{
+  "name": "wakeup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:adrianp/wakeup.git"
+  },
+  "author": "Adrian-Tudor Panescu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adrianp/wakeup/issues"
+  },
+  "homepage": "https://github.com/adrianp/wakeup"
+}
