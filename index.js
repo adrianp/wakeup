@@ -19,18 +19,18 @@ var time = function time(v) {
 	return result;
 };
 
-var early = function early() {
+var cheat = function cheat() {
 	var hour = time().hour();
 	if (hour < 6) {
-		return true;
+		return 0;
 	}
-	return false;
+	if (hour > 9) {
+		return 2;
+	}
+	return 1;
 };
 
 var quote = function quote() {
-	if (early()) {
-		return 'It\'s too early, go back to sleep!';
-	}
 	var result = 'Sorry, I forgot to add the quote for today; you win!';
 	for (var k in quotes) {
 		if (quotes.hasOwnProperty(k)) {
@@ -53,7 +53,10 @@ app.set('views', path.join(__dirname, '/views'));
 app.set('view engine', 'ejs');
 
 app.get('/', function indexReq(request, response) {
-	response.render('index', {'quote': quote()});
+	response.render('index', {
+		'cheat': cheat(),
+		'quote': quote()
+	});
 });
 
 app.get('*', function indexReq(request, response) {

@@ -11,7 +11,7 @@
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>Good Morning!</title>
+		<title>Lucia goes ECN</title>
 
 		<link rel="apple-touch-icon" href="apple-touch-icon.png">
 		<link rel="stylesheet" href="css/normalize.min.css">
@@ -30,15 +30,21 @@
 
 		<div class="main-container">
 			<div class="main wrapper clearfix">
-				<h2>Good morning, Lucia!</h2>
-				<h3>Now send me this text:</h3>
-				<h1 class="quote"><q><%= quote %></q></h1>
+				<% if (cheat === 2) { %>
+					<h2>Go study now!</h2>
+				<% } else if (cheat === 0) { %>
+					<h2>Go sleep now!</h2>
+				<% } else { %>
+					<h2>Good morning, Lucia!</h2>
+					<h3>Now send me this text:</h3>
+					<h1 class="quote"><q><%= quote %></q></h1>
+				<% } %>
 			</div>
 		</div>
 
 		<div class="footer-container">
 			<footer class="wrapper">
-				<h3>Made with &hearts; by Adrian-Tudor P&#259;nescu</h3>
+				<h3>Made with &hearts; by ATP</h3>
 			</footer>
 		</div>
 	</body>
