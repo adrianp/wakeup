@@ -24,7 +24,7 @@ var cheat = function cheat() {
 	if (hour < 6) {
 		return 0;
 	}
-	if (hour > 9) {
+	if (hour >= 9) {
 		return 2;
 	}
 	return 1;
