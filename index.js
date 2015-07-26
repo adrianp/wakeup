@@ -1,5 +1,6 @@
 'use strict';
 
+var compression = require('compression');
 var express = require('express');
 var moment = require('moment');
 var path = require('path');
@@ -45,15 +46,16 @@ var quote = function quote() {
 
 var app = express();
 
-app.set('port', process.env.PORT || 5000);
-
+app.use(compression());
 app.use(express.static(path.join(__dirname, '/static')));
 
+app.set('port', process.env.PORT || 5000);
 app.set('views', path.join(__dirname, '/views'));
 app.set('view engine', 'ejs');
 
 app.get('/', function indexReq(request, response) {
 	response.render('index', {
+		'timestamp': new Date().getTime(),
 		'cheat': cheat(),
 		'quote': quote()
 	});
