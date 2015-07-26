@@ -70,18 +70,18 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #004b7f;
+    border-bottom: 20px solid #A33F0C;
 }
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #004b7f;
+    border-top: 20px solid #A33F0C;
 }
 
 .header-container,
 .footer-container,
 .main aside {
-    background: #0097ff;
+    background: #DB985E;
 }
 
 .title {
@@ -116,7 +116,7 @@ nav a {
     font-weight: bold;
 
     color: white;
-    background: #004b7f;
+    background: #A33F0C;
 }
 
 nav a:hover,
@@ -170,19 +170,9 @@ nav a:hover {
    Author's custom styles
    ========================================================================== */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.love {
+	color: red;
+}
 
 /* ==========================================================================
    Media Queries
